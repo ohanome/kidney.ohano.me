@@ -29,7 +29,7 @@ export default {
   name: 'IndexPage',
   data() {
     return {
-      found: 2,
+      found: 0,
       placed: 49,
     }
   },
