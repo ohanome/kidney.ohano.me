@@ -26,6 +26,8 @@
 /web/update.php
 /web/web.config
 
+/web/sites/default/files
+
 /.idea
 
 .env
