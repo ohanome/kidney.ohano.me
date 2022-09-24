@@ -1,0 +1,20 @@
+uuid: a9f03c78-18e3-4bd4-affc-cf0a71406e97
+langcode: de
+status: true
+dependencies:
+  theme:
+    - kidney
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: kidney_page_title
+theme: kidney
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Seitentitel
+  label_display: '0'
+  provider: core
+visibility: {  }

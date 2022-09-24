@@ -1,0 +1,22 @@
+uuid: 3df5e613-b4d9-45a9-86f5-3618ee403206
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - kidney
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: kidney_content
+theme: kidney
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: Haupt-Seiteninhalt
+  label_display: '0'
+  provider: system
+visibility: {  }

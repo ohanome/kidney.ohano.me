@@ -1,0 +1,20 @@
+uuid: 94cb88b9-d61b-4e9b-8119-95deaf69d461
+langcode: de
+status: true
+dependencies:
+  theme:
+    - kidney
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: kidney_primary_admin_actions
+theme: kidney
+region: header
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primäre Verwaltungsaktionen'
+  label_display: '0'
+  provider: core
+visibility: {  }
