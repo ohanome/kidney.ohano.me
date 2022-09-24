@@ -1,0 +1,14 @@
+uuid: acf215b8-05c9-4390-b005-8114d280613c
+langcode: de
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: k3aUaZXGDuhkek2TZIee0PApOPTvYZLadziekdyHA5A
+id: user_search
+label: Benutzer
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }

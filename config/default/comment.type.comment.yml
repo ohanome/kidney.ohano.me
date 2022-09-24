@@ -1,0 +1,10 @@
+uuid: 420e880a-7b2b-478f-b8ea-5a7dfde69f0d
+langcode: de
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bqZsN31T2n0UjcbyCpOPi9D2iO0sAOHR7FnEs9qMvaA
+id: comment
+label: Standardkommentare
+target_entity_type_id: node
+description: 'Kommentieren des Inhalts erlauben'
