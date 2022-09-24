@@ -26,7 +26,8 @@
 /web/update.php
 /web/web.config
 
-/web/sites/default/files
+/web/sites/default/files/*
+!/web/sites/default/files/.gitkeep
 
 /.idea
 
