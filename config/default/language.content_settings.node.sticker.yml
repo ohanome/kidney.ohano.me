@@ -1,0 +1,11 @@
+uuid: 8cc63fe0-1161-4b4b-900a-360e17824110
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.sticker
+id: node.sticker
+target_entity_type_id: node
+target_bundle: sticker
+default_langcode: site_default
+language_alterable: false

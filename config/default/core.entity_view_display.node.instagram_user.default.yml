@@ -1,0 +1,20 @@
+uuid: 8f25eca2-561c-4aca-b04f-fba4cfd19b67
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.instagram_user
+  module:
+    - user
+id: node.instagram_user.default
+targetEntityType: node
+bundle: instagram_user
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

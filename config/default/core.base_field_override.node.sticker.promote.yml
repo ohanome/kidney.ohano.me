@@ -1,0 +1,22 @@
+uuid: d5384ae1-7e41-4146-bfa7-eaa0517762b0
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.sticker
+id: node.sticker.promote
+field_name: promote
+entity_type: node
+bundle: sticker
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

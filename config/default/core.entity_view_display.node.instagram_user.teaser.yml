@@ -1,0 +1,21 @@
+uuid: bee94a31-576d-4c43-b65e-af8b556c8700
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.instagram_user
+  module:
+    - user
+id: node.instagram_user.teaser
+targetEntityType: node
+bundle: instagram_user
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

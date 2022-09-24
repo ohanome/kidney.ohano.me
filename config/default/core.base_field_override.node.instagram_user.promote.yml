@@ -1,0 +1,22 @@
+uuid: e6ae17ad-3523-4f07-aa1f-d0b2b85e0b7d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.instagram_user
+id: node.instagram_user.promote
+field_name: promote
+entity_type: node
+bundle: instagram_user
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

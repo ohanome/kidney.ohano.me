@@ -1,0 +1,18 @@
+uuid: 4e39509a-046b-41b7-ac95-90c68ec7011c
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Sticker
+type: sticker
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

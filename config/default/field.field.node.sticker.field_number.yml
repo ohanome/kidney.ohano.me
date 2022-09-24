@@ -1,0 +1,23 @@
+uuid: c1d4aa81-1f37-4725-9c95-9fd36011e202
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number
+    - node.type.sticker
+id: node.sticker.field_number
+field_name: field_number
+entity_type: node
+bundle: sticker
+label: Nummer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

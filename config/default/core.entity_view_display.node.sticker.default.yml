@@ -1,0 +1,71 @@
+uuid: ffa6a645-9bdf-46b3-8876-d725455a94f7
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.sticker.field_found_by
+    - field.field.node.sticker.field_latitude
+    - field.field.node.sticker.field_location_description
+    - field.field.node.sticker.field_longitude
+    - field.field.node.sticker.field_number
+    - node.type.sticker
+  module:
+    - user
+id: node.sticker.default
+targetEntityType: node
+bundle: sticker
+mode: default
+content:
+  field_found_by:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_latitude:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 8
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_location_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_longitude:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 8
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
