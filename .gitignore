@@ -27,3 +27,7 @@
 /web/web.config
 
 /.idea
+
+.env
+.env.*
+!.env.example
