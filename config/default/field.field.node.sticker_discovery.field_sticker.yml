@@ -1,0 +1,29 @@
+uuid: 70eded18-4ec5-410a-b5f2-5e3c38c6d1c7
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sticker
+    - node.type.sticker
+    - node.type.sticker_discovery
+id: node.sticker_discovery.field_sticker
+field_name: field_sticker
+entity_type: node
+bundle: sticker_discovery
+label: Sticker
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sticker: sticker
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

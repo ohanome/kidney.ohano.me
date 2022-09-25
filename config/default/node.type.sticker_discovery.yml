@@ -1,0 +1,17 @@
+uuid: 9052484e-9978-4cbc-97ed-cd41d5575c6e
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Sticker-Fund
+type: sticker_discovery
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

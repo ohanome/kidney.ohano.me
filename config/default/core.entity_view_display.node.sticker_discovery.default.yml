@@ -1,0 +1,38 @@
+uuid: 8a08fcd8-4f0d-4911-a2a8-21baec5e9aa5
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.sticker_discovery.field_instagram_user
+    - field.field.node.sticker_discovery.field_sticker
+    - node.type.sticker_discovery
+  module:
+    - user
+id: node.sticker_discovery.default
+targetEntityType: node
+bundle: sticker_discovery
+mode: default
+content:
+  field_instagram_user:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_sticker:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

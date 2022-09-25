@@ -1,0 +1,11 @@
+uuid: d0fdd40b-41aa-4349-82b8-64f3c8b4171e
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.sticker_discovery
+id: node.sticker_discovery
+target_entity_type_id: node
+target_bundle: sticker_discovery
+default_langcode: site_default
+language_alterable: false

@@ -5,7 +5,8 @@ function k_theme() {
     'k_frontpage' => [
       'template' => 'k-frontpage',
       'variables' => [
-        'content' => NULL,
+        'count' => NULL,
+        'max' => NULL,
       ],
     ],
   ];

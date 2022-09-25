@@ -1,0 +1,25 @@
+uuid: b652edc3-e21c-4040-8762-b3cacbf8f843
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sticker_discovery.field_instagram_user
+    - field.field.node.sticker_discovery.field_sticker
+    - node.type.sticker_discovery
+  module:
+    - user
+id: node.sticker_discovery.teaser
+targetEntityType: node
+bundle: sticker_discovery
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_instagram_user: true
+  field_sticker: true
+  langcode: true
