@@ -4,12 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.sticker.field_found_by
-    - field.field.node.sticker.field_latitude
+    - field.field.node.sticker.field_location
     - field.field.node.sticker.field_location_description
-    - field.field.node.sticker.field_longitude
     - field.field.node.sticker.field_number
     - node.type.sticker
   module:
+    - leaflet
     - user
 id: node.sticker.default
 targetEntityType: node
@@ -24,16 +24,76 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
-  field_latitude:
-    type: number_decimal
+  field_location:
+    type: leaflet_formatter_default
     label: above
     settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 8
-      prefix_suffix: true
+      multiple_map: false
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: false
+      disable_wheel: false
+      gesture_handling: false
+      reset_map:
+        control: false
+        position: topright
+      popup: false
+      popup_content: ''
+      map_position:
+        force: false
+        center:
+          lat: !!float 0
+          lon: !!float 0
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+      icon:
+        iconType: marker
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        iconSize:
+          x: null
+          'y': null
+        iconAnchor:
+          x: null
+          'y': null
+        shadowSize:
+          x: null
+          'y': null
+        shadowAnchor:
+          x: null
+          'y': null
+        popupAnchor:
+          x: null
+          'y': null
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius": 100, "color": "red", "fillColor": "#f03", "fillOpacity": 0.5}'
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+        include_path: false
+      fullscreen:
+        control: false
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      weight: null
     third_party_settings: {  }
-    weight: 102
+    weight: 106
     region: content
   field_location_description:
     type: basic_string
@@ -41,17 +101,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 104
-    region: content
-  field_longitude:
-    type: number_decimal
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 8
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 103
     region: content
   field_number:
     type: number_integer

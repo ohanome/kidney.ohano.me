@@ -1,0 +1,21 @@
+uuid: 9c6a7524-0801-46e7-a10b-ed97916751b0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.sticker
+  module:
+    - geofield
+id: node.sticker.field_location
+field_name: field_location
+entity_type: node
+bundle: sticker
+label: Ort
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

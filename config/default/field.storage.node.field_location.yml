@@ -1,15 +1,17 @@
-uuid: f4e053bb-3dbc-4b4d-984f-35b28743a5fa
+uuid: f6235ea4-547c-45a6-884b-f0ae893d1b2b
 langcode: de
 status: true
 dependencies:
   module:
+    - geofield
     - node
-id: node.field_latitude
-field_name: field_latitude
+id: node.field_location
+field_name: field_location
 entity_type: node
-type: float
-settings: {  }
-module: core
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
 locked: false
 cardinality: 1
 translatable: true
