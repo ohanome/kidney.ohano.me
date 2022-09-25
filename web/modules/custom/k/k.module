@@ -1,0 +1,12 @@
+<?php
+
+function k_theme() {
+  return [
+    'k_frontpage' => [
+      'template' => 'k-frontpage',
+      'variables' => [
+        'content' => NULL,
+      ],
+    ],
+  ];
+}

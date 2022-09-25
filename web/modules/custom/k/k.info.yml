@@ -1,0 +1,5 @@
+name: Kidney
+type: module
+description: 'Kidney module'
+package: Custom
+core_version_requirement: ^9 || ^10

@@ -1,0 +1,6 @@
+k.frontpage:
+  path: '/frontpage'
+  defaults:
+    _controller: '\Drupal\k\Controller\IndexController::frontpage'
+  requirements:
+    _permission: 'access content'

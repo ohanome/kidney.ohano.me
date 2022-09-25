@@ -6,9 +6,9 @@ name: Kidney
 mail: kidney@ohano.me
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /frontpage
+  404: /frontpage
+  front: /frontpage
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: de

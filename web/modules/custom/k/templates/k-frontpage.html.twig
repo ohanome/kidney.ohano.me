@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Hi.</h1>
+  <div>
+    <p>Du hast Kidney irgendwo gefunden? <strong>Noice!</strong></p>
+    <p>Mach ein Foto von ihm, poste es in deiner Story und tagge <strong><a target="_blank" href="//instagram.com/kidneythehorse">@kidneythehorse</a></strong>.</p>
+  </div>
+  {% if count %}
+    <p>Kidney wurde bisher <strong>{{ count }}</strong>{% if max %}/{{ max }}{% endif%} mal gefunden.</p>
+  {% endif %}
+  <div>
+    <a target="_blank" href="//instagram.com/kidneythehorse">Instagram</a> • <a target="_blank" href="//twitter.com/kidneythehorse">Twitter</a> • <a target="_blank" href="https://www.redbubble.com/people/ohano/explore?page=1&sortOrder=recent">Shop</a>
+  </div>
+</div>
