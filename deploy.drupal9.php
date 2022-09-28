@@ -52,12 +52,16 @@ set('bin/drush', function () {
   return '{{bin/php}} {{release_path}}/vendor/bin/drush';
 });
 
+task('deploy:vendors', function () {
+  run('cd {{release_path}} && {{bin/composer}} install');
+});
+
 task('drupal:config:import', function () {
-  run('cd {{release_path}} && {{bin/drush}} -y config:import');
+  run('cd {{release_path}} && {{bin/drush}} cim -y');
 });
 
 task('drupal:cache:rebuild', function () {
-  run('cd {{release_path}} && {{bin/drush}} -y cache:rebuild');
+  run('cd {{release_path}} && {{bin/drush}} cr');
 });
 
 /**
@@ -69,7 +73,6 @@ set('release_name', function () {
 
 task('deploy', [
   'deploy:info',
-  'deploy:prepare',
   'deploy:lock',
   'deploy:release',
   'deploy:update_code',
