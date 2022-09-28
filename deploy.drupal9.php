@@ -60,6 +60,10 @@ task('drupal:config:import', function () {
   run('cd {{release_path}} && {{bin/drush}} cim -y');
 });
 
+task('drupal:database:update', function () {
+  run('cd {{release_path}} && {{bin/drush}} updb -y');
+});
+
 task('drupal:cache:rebuild', function () {
   run('cd {{release_path}} && {{bin/drush}} cr');
 });
@@ -81,6 +85,7 @@ task('deploy', [
   'deploy:writable',
   'deploy:clear_paths',
   'deploy:symlink',
+  'drupal:drupal:database:update',
   'drupal:config:import',
   'drupal:cache:rebuild',
   'deploy:unlock',
