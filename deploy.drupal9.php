@@ -81,7 +81,7 @@ task('deploy', [
   'drupal:config:import',
   'drupal:cache:rebuild',
   'deploy:unlock',
-  'cleanup'
+  'deploy:cleanup'
 ]);
 
 // [Optional] if deploy fails automatically unlock.
