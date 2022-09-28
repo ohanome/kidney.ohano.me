@@ -1,6 +1,6 @@
 uuid: 8fe52d07-d9b5-4d59-84bd-030a21d8528d
 langcode: de
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: kidney_site_branding
 theme: kidney
 region: header
-weight: 0
+weight: -1
 provider: null
 plugin: system_branding_block
 settings:

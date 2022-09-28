@@ -11,7 +11,7 @@ _core:
 id: kidney_messages
 theme: kidney
 region: header
-weight: -7
+weight: -2
 provider: null
 plugin: system_messages_block
 settings:

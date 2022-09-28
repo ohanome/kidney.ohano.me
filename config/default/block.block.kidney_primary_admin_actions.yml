@@ -9,7 +9,7 @@ _core:
 id: kidney_primary_admin_actions
 theme: kidney
 region: header
-weight: -8
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

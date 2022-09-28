@@ -12,8 +12,8 @@ _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
 id: kidney_main_menu
 theme: kidney
-region: header
-weight: 4
+region: footer
+weight: -2
 provider: null
 plugin: 'system_menu_block:main'
 settings:
