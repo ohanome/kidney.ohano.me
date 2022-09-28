@@ -1,16 +1,16 @@
-uuid: 54828827-643b-4f3a-ab6e-a9b3f8814e9a
+uuid: 5f300361-b415-4772-82a3-4dce0a346a72
 langcode: de
 status: true
 dependencies:
   config:
-    - field.storage.node.field_found_by
-    - node.type.instagram_user
+    - field.storage.node.field_found
     - node.type.sticker
-id: node.sticker.field_found_by
-field_name: field_found_by
+    - node.type.sticker_discovery
+id: node.sticker.field_found
+field_name: field_found
 entity_type: node
 bundle: sticker
-label: 'Gefunden von'
+label: Entdeckung
 description: ''
 required: false
 translatable: false
@@ -20,10 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      instagram_user: instagram_user
+      sticker_discovery: sticker_discovery
     sort:
       field: _none
       direction: ASC
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

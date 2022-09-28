@@ -15,7 +15,7 @@ class IndexController extends ControllerBase {
     $foundSticker = 0;
     foreach ($allSticker as $nodeId) {
       $node = Node::load($nodeId);
-      $found = count($node->get('field_found_by')->referencedEntities()) > 0;
+      $found = count($node->get('field_found')->referencedEntities()) > 0;
       if ($found) {
         $foundSticker++;
       }

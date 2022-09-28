@@ -1,0 +1,21 @@
+uuid: d0312305-8faf-4096-a7db-2bfc70a10961
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.sticker
+  module:
+    - node
+    - system
+    - toolbar
+id: ambassador
+label: Ambassador
+weight: -7
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create sticker content'
+  - 'edit own sticker content'
+  - 'view sticker revisions'
+  - 'view the administration theme'

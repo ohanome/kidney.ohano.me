@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.sticker.field_found_by
+    - field.field.node.sticker.field_found
     - field.field.node.sticker.field_location
     - field.field.node.sticker.field_location_description
     - field.field.node.sticker.field_number
@@ -22,7 +22,7 @@ content:
     weight: 100
     region: content
 hidden:
-  field_found_by: true
+  field_found: true
   field_location: true
   field_location_description: true
   field_number: true
