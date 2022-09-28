@@ -85,7 +85,7 @@ task('deploy', [
   'deploy:writable',
   'deploy:clear_paths',
   'deploy:symlink',
-  'drupal:drupal:database:update',
+  'drupal:database:update',
   'drupal:config:import',
   'drupal:cache:rebuild',
   'deploy:unlock',
