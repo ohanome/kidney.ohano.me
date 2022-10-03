@@ -3,7 +3,6 @@ langcode: de
 status: true
 dependencies:
   config:
-    - field.field.node.sticker.field_found
     - field.field.node.sticker.field_location
     - field.field.node.sticker.field_location_description
     - field.field.node.sticker.field_number
@@ -16,14 +15,6 @@ targetEntityType: node
 bundle: sticker
 mode: default
 content:
-  field_found:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 107
-    region: content
   field_location:
     type: leaflet_formatter_default
     label: above
